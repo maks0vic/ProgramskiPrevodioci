@@ -1,0 +1,107 @@
+digraph {
+	node [height=0.1 shape=box]
+	edge [arrowsize=0.5]
+	node1 [label=Program]
+	node2 [label=FuncImpl]
+	node1 -> node2
+	node3 [label="Type : integer"]
+	node2 -> node3
+	node4 [label="Id : pow_rek"]
+	node2 -> node4
+	node5 [label=Params]
+	node2 -> node5
+	node6 [label=Decl]
+	node5 -> node6
+	node7 [label="Type : integer"]
+	node6 -> node7
+	node8 [label="Id : a"]
+	node6 -> node8
+	node9 [label=Decl]
+	node5 -> node9
+	node10 [label="Type : integer"]
+	node9 -> node10
+	node11 [label="Id : b"]
+	node9 -> node11
+	node12 [label=Block]
+	node2 -> node12
+	node13 [label=If]
+	node12 -> node13
+	node14 [label="BinOp : ="]
+	node13 -> node14
+	node15 [label="Id : b"]
+	node14 -> node15
+	node16 [label="Int : 0"]
+	node14 -> node16
+	node17 [label=Block]
+	node13 -> node17
+	node18 [label=Exit]
+	node17 -> node18
+	node19 [label=Args]
+	node18 -> node19
+	node20 [label="Int : 1"]
+	node19 -> node20
+	node21 [label=Exit]
+	node12 -> node21
+	node22 [label=Args]
+	node21 -> node22
+	node23 [label="BinOp : *"]
+	node22 -> node23
+	node24 [label="Id : a"]
+	node23 -> node24
+	node25 [label=FuncCall]
+	node23 -> node25
+	node26 [label="Id : pow_rek"]
+	node25 -> node26
+	node27 [label=Args]
+	node25 -> node27
+	node28 [label="Id : a"]
+	node27 -> node28
+	node29 [label="BinOp : -"]
+	node27 -> node29
+	node30 [label="Id : b"]
+	node29 -> node30
+	node31 [label="Int : 1"]
+	node29 -> node31
+	node32 [label=VarDeclaration]
+	node1 -> node32
+	node33 [label=Decl]
+	node32 -> node33
+	node34 [label="Type : integer"]
+	node33 -> node34
+	node35 [label="Id : a"]
+	node33 -> node35
+	node36 [label=Decl]
+	node32 -> node36
+	node37 [label="Type : integer"]
+	node36 -> node37
+	node38 [label="Id : b"]
+	node36 -> node38
+	node39 [label=Block]
+	node1 -> node39
+	node40 [label=FuncCall]
+	node39 -> node40
+	node41 [label="Id : readln"]
+	node40 -> node41
+	node42 [label=Args]
+	node40 -> node42
+	node43 [label="Id : a"]
+	node42 -> node43
+	node44 [label="Id : b"]
+	node42 -> node44
+	node45 [label=FuncCall]
+	node39 -> node45
+	node46 [label="Id : writeln"]
+	node45 -> node46
+	node47 [label=Args]
+	node45 -> node47
+	node48 [label=FuncCall]
+	node47 -> node48
+	node49 [label="Id : pow_rek"]
+	node48 -> node49
+	node50 [label=Args]
+	node48 -> node50
+	node51 [label="Id : a"]
+	node50 -> node51
+	node52 [label="Id : b"]
+	node50 -> node52
+}
